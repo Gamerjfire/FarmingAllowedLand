@@ -1,6 +1,6 @@
 import Exceptions.FieldBoundingException;
 import Exceptions.NotSized4Exception;
-import SquareSubclass.Field;
+import FieldSubclass.Field;
 
 import java.util.*;
 
@@ -18,7 +18,7 @@ public class MainRunner {
             boolean running = true;
             //Main runtime which pulls in information via the input scanner.  Error checking in real time to avoid typos.
             while (running) {
-                System.out.println("Please enter the next input for barren area.  If you are finished, press enter without typing anything else.");
+                System.out.println("Please enter the next input for barren area in the format \"## ## ## ##\".  If you are finished, press enter without typing anything else.");
                 String inputtedValue = input.nextLine();
                 if(inputtedValue==null || inputtedValue.equals("")){
                     running=false;
@@ -70,7 +70,7 @@ public class MainRunner {
             return null;
         //For odd formating which is not caught by other formating errors
         } catch(NumberFormatException e){
-            System.out.println("Please follow the listed format {## ## ## ##}");
+            System.out.println("Please follow the listed format \"## ## ## ##\"");
             return null;
         //For avoiding numbers in excess of the field
         }

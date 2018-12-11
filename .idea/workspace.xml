@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="FarmingAllowedLand:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="219fef32-4df7-4ac7-a42d-cde3cc210c84" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -8,16 +13,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/FarmingAllowedLand$MainRunnerTest_sanitizationOfInputs.ic" NAME="MainRunnerTest.sanitizationOfInputs Coverage Results" MODIFIED="1544534007294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/FarmingAllowedLand$MainRunnerTest.ic" NAME="MainRunnerTest Coverage Results" MODIFIED="1544533580424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/FarmingAllowedLand$FieldTest.ic" NAME="FieldTest Coverage Results" MODIFIED="1544534258456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>FieldSubclass.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="230" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Exceptions/NotSized4Exception.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="66" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="66" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="e#117#118#0" expanded="true" />
-                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#194#195#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -26,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/MainRunnerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="153">
+              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+            <state relative-caret-position="-903">
+              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -48,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/Exceptions/FieldBoundingException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+              <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
               <folding>
                 <element signature="e#125#126#0" expanded="true" />
                 <element signature="e#200#201#0" expanded="true" />
@@ -57,23 +72,42 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SquareSubclass/Field.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FieldSubclass/Field.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1008">
-              <caret line="11" column="87" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
+            <state relative-caret-position="68">
+              <caret line="85" column="41" lean-forward="true" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
               <folding>
-                <element signature="e#1433#1451#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/SquareSubclass/FieldTest.java">
+        <entry file="file://$PROJECT_DIR$/src/FieldSubclass/Coordinate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
+            <state relative-caret-position="352">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#82#83#0" expanded="true" />
+                <element signature="e#116#117#0" expanded="true" />
+                <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#213#214#0" expanded="true" />
+                <element signature="e#248#249#0" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+                <element signature="e#333#334#0" expanded="true" />
+                <element signature="e#379#380#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/FieldSubclass/FieldTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,8 +120,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -96,10 +130,12 @@
       <find>x</find>
       <find>y</find>
       <find>[y</find>
+      <find>getValue()</find>
     </findStrings>
     <replaceStrings>
       <replace>pairs</replace>
       <replace>[pair.getValue()]</replace>
+      <replace>getyCoordinate()</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -109,12 +145,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/SquareSubclass/FieldTest.groovy" />
-        <option value="$PROJECT_DIR$/src/Exceptions/NotSized4Exception.java" />
-        <option value="$PROJECT_DIR$/src/Exceptions/FieldBoundingException.java" />
         <option value="$PROJECT_DIR$/test/MainRunnerTest.java" />
         <option value="$PROJECT_DIR$/test/SquareSubclass/FieldTest.java" />
-        <option value="$PROJECT_DIR$/src/SquareSubclass/Field.java" />
         <option value="$PROJECT_DIR$/src/MainRunner.java" />
+        <option value="$PROJECT_DIR$/src/Exceptions/FieldBoundingException.java" />
+        <option value="$PROJECT_DIR$/src/Exceptions/NotSized4Exception.java" />
+        <option value="$PROJECT_DIR$/src/SquareSubclass/Field.java" />
+        <option value="$PROJECT_DIR$/src/FieldSubclass/Coordinates.java" />
+        <option value="$PROJECT_DIR$/src/FieldSubclass/Coordinate.java" />
+        <option value="$PROJECT_DIR$/src/FieldSubclass/Field.java" />
       </list>
     </option>
   </component>
@@ -140,31 +179,7 @@
             </path>
             <path>
               <item name="FarmingAllowedLand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FarmingAllowedLand" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FarmingAllowedLand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FarmingAllowedLand" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FarmingAllowedLand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FarmingAllowedLand" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="SquareSubclass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FarmingAllowedLand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FarmingAllowedLand" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FarmingAllowedLand" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FarmingAllowedLand" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="SquareSubclass" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -179,14 +194,15 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544530992083" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544534353149" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Spock" value="spock.lang.Specification" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Jar" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -203,6 +219,7 @@
       <recent name="spock.lang.Specification" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Judson\Documents\GitHub\FarmingAllowedLand\Jar" />
       <recent name="C:\Users\Judson\Documents\GitHub\FarmingAllowedLand" />
     </key>
   </component>
@@ -218,11 +235,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FieldTest">
-    <configuration name="All in FarmingAllowedLand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JAR Application.FarmingAllowedLand_jar.jar (1)">
+    <configuration name="MainRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainRunner" />
       <module name="FarmingAllowedLand" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -231,44 +247,12 @@
       <module name="FarmingAllowedLand" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SquareSubclass.*" />
+          <option name="PATTERN" value="FieldSubclass.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SquareSubclass" />
-      <option name="MAIN_CLASS_NAME" value="SquareSubclass.FieldTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FieldTest.findFarmableAreHashTag" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FarmingAllowedLand" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SquareSubclass.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SquareSubclass" />
-      <option name="MAIN_CLASS_NAME" value="SquareSubclass.FieldTest" />
-      <option name="METHOD_NAME" value="findFarmableAreHashTag" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FieldTest.findFarmableAreaHashTagSplitHalf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FarmingAllowedLand" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SquareSubclass.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SquareSubclass" />
-      <option name="MAIN_CLASS_NAME" value="SquareSubclass.FieldTest" />
-      <option name="METHOD_NAME" value="findFarmableAreaHashTagSplitHalf" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="FieldSubclass" />
+      <option name="MAIN_CLASS_NAME" value="FieldSubclass.FieldTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -281,13 +265,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainRunnerTest.sanitizationOfInputs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FarmingAllowedLand" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainRunnerTest" />
+      <option name="METHOD_NAME" value="sanitizationOfInputs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FarmingAllowedLand_jar.jar (1)" type="JarApplication" factoryName="JAR Application" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/Jar/FarmingAllowedLand_jar.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FarmingAllowedLand_jar.jar" type="JarApplication" factoryName="JAR Application">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/FarmingAllowedLand_jar.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.FarmingAllowedLand_jar.jar (1)" />
         <item itemvalue="JUnit.FieldTest" />
-        <item itemvalue="JUnit.FieldTest.findFarmableAreaHashTagSplitHalf" />
-        <item itemvalue="JUnit.All in FarmingAllowedLand" />
+        <item itemvalue="JUnit.MainRunnerTest.sanitizationOfInputs" />
         <item itemvalue="JUnit.MainRunnerTest" />
-        <item itemvalue="JUnit.FieldTest.findFarmableAreHashTag" />
+        <item itemvalue="Application.MainRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -301,44 +304,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544500235595</updated>
-      <workItem from="1544500237740" duration="15893000" />
+      <workItem from="1544500237740" duration="19202000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainRunnerTest - 2018.12.11 at 05h 47m 07s.xml">
+    <history-entry file="FieldTest - 2018.12.11 at 06h 27m 50s.xml">
+      <configuration name="FieldTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FieldTest - 2018.12.11 at 06h 28m 32s.xml">
+      <configuration name="FieldTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FieldTest - 2018.12.11 at 07h 03m 38s.xml">
+      <configuration name="FieldTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainRunnerTest - 2018.12.11 at 07h 03m 50s.xml">
       <configuration name="MainRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_FarmingAllowedLand - 2018.12.11 at 05h 47m 14s.xml">
-      <configuration name="All in FarmingAllowedLand" configurationId="JUnit" />
+    <history-entry file="MainRunnerTest - 2018.12.11 at 07h 06m 31s.xml">
+      <configuration name="MainRunnerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_FarmingAllowedLand - 2018.12.11 at 05h 48m 08s.xml">
-      <configuration name="All in FarmingAllowedLand" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_FarmingAllowedLand - 2018.12.11 at 05h 55m 46s.xml">
-      <configuration name="All in FarmingAllowedLand" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FieldTest_findFarmableAreaHashTagSplitHalf - 2018.12.11 at 05h 56m 10s.xml">
-      <configuration name="FieldTest.findFarmableAreaHashTagSplitHalf" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FieldTest_findFarmableAreaHashTagSplitHalf - 2018.12.11 at 05h 56m 33s.xml">
-      <configuration name="FieldTest.findFarmableAreaHashTagSplitHalf" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FieldTest_findFarmableAreaHashTagSplitHalf - 2018.12.11 at 05h 58m 59s.xml">
-      <configuration name="FieldTest.findFarmableAreaHashTagSplitHalf" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FieldTest - 2018.12.11 at 06h 02m 15s.xml">
+    <history-entry file="FieldTest - 2018.12.11 at 07h 08m 27s.xml">
       <configuration name="FieldTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FieldTest - 2018.12.11 at 06h 04m 22s.xml">
+    <history-entry file="FieldTest - 2018.12.11 at 07h 10m 22s.xml">
       <configuration name="FieldTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FieldTest - 2018.12.11 at 06h 05m 27s.xml">
+    <history-entry file="MainRunnerTest_sanitizationOfInputs - 2018.12.11 at 07h 10m 30s.xml">
+      <configuration name="MainRunnerTest.sanitizationOfInputs" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FieldTest - 2018.12.11 at 07h 12m 18s.xml">
       <configuration name="FieldTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainRunnerTest_sanitizationOfInputs - 2018.12.11 at 07h 13m 38s.xml">
+      <configuration name="MainRunnerTest.sanitizationOfInputs" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15893000" />
+    <option name="totallyTimeSpent" value="19202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1608" y="-69" width="1616" height="876" extended-state="6" />
@@ -355,15 +358,16 @@
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50064266" side_tool="true" weight="0.43876177" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.43876177" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.4993573" visible="true" weight="0.43876177" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.30417228" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32974428" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32969153" />
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -382,10 +386,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SquareSubclass/Field.java</url>
-          <line>104</line>
+          <url>file://$PROJECT_DIR$/src/FieldSubclass/Field.java</url>
+          <line>103</line>
           <properties />
           <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FieldSubclass/Field.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/FieldSubclass/Field.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -458,33 +474,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Exceptions/NotSized4Exception.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="66" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="66" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="e#117#118#0" expanded="true" />
-            <element signature="e#152#153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/MainRunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/SquareSubclass/FieldTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -492,7 +495,7 @@
     <entry file="file://$PROJECT_DIR$/src/Exceptions/FieldBoundingException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="65" selection-start-line="4" selection-start-column="65" selection-end-line="4" selection-end-column="65" />
+          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
           <folding>
             <element signature="e#125#126#0" expanded="true" />
             <element signature="e#200#201#0" expanded="true" />
@@ -500,20 +503,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SquareSubclass/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1008">
-          <caret line="11" column="87" selection-start-line="11" selection-start-column="87" selection-end-line="11" selection-end-column="87" />
-          <folding>
-            <element signature="e#1433#1451#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/.idea/artifacts/FarmingAllowedLand_jar.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="42" column="78" selection-start-line="42" selection-start-column="78" selection-end-line="42" selection-end-column="78" />
+        <state relative-caret-position="-903">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/MainRunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/FieldSubclass/FieldTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FieldSubclass/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#82#83#0" expanded="true" />
+            <element signature="e#116#117#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FieldSubclass/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="85" column="41" lean-forward="true" selection-start-line="85" selection-start-column="41" selection-end-line="85" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -522,11 +573,20 @@
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <artifact-editor />
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="jpa-descriptors" />
+              <type id="library" />
+              <type id="javaee-facet-resources" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>FarmingAllowedLand:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -574,6 +634,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -581,6 +642,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>com.bluecatcode.hamcrest:hamcrest-1.3-extended:1.1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
