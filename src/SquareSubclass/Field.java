@@ -1,13 +1,15 @@
 package SquareSubclass;
 
-import java.util.HashSet;
-import java.util.Set;
+import javafx.util.Pair;
+
+import java.util.*;
 
 public class Field {
     int[][] fieldSquares = new int[400][600];
-    Set<Integer> farmableAreas = new HashSet<>();
-    //Current implementation is allocating neighboring squares to begin with, and then area afterwards
+    List<Integer> farmableAreas = new ArrayList<>();
+    int currentTotalArea = 0;
 
+    //Current implementation is allocating neighboring squares to begin with, and then area afterwards
     public Field(){
         for (int[] squareLine:fieldSquares){
             for(int squareValue:squareLine){
@@ -27,64 +29,63 @@ public class Field {
 
     //This function calls through each square and when it sees a new square of value 0 (Which indicates it is unseen) it
     //adds a new farmable square to the set to be allocated to.
-    public Set<Integer> findFarmableArea(){
+    public List<Integer> findFarmableArea(){
         //Hardcoded for efficiency.  Might be better as variables but to do minor improvements on runtime I have it hardcoded.
         for(int horizontal= 0; horizontal<=399; horizontal++){
             for(int vertical= 0; vertical<=599; vertical++){
                 if(fieldSquares[horizontal][vertical]==0){
-                    farmableAreas.add(setSeenAndCallNeighbors(horizontal,vertical,0));
-                    /*Set<String> pairsAnalyzed = new HashSet<>();
-                    int[] testArrayX = {horizontal};
-                    int[] testArrayY = {vertical};
-                    farmableAreas.add(checkNeighboringAreas(testArrayX,testArrayY,pairsAnalyzed));*/
+                    Pair<Integer,Integer> pair = new Pair<Integer, Integer>(horizontal,vertical);
+                    List<Pair<Integer, Integer>> listedPair = new ArrayList<>();
+                    listedPair.add(pair);
+                    farmableAreas.add(findFarmableNeighbor(listedPair));
                 }
-            }
-        }
-        for(int horizontal= 0; horizontal<=399; horizontal++){
-            System.out.println();
-            for(int vertical= 0; vertical<=599; vertical++){
-                System.out.print(fieldSquares[horizontal][vertical]);
             }
         }
         return farmableAreas;
     }
 
-//    //The arrays will be the same size as they are pairs, they are in this form to allow for future information
-//    private int checkNeighboringAreas(int[] availableSpacesX, int[] availableSpacesY, Set<String> pairsAnalyzed){
-//
-//    }
-
-    //Recursive searching functionality to find the odd shapes effectively.
-    private int findFarmableNeighbor(int x, int y, int totalAreaInSet){
-        int totalAreaOverall = totalAreaInSet;
-        System.out.println("Current location is [" + x + "," + y + "]");
-        if(x>=0&&x<399){
-            if(fieldSquares[x+1][y]==0){
-                totalAreaOverall = setSeenAndCallNeighbors(x+1,y,totalAreaOverall);
+    //Search function to find the paths of potential information
+    private int findFarmableNeighbor(List<Pair<Integer,Integer>> pairs){
+        List<Pair<Integer, Integer>> functioningPairs = pairs;
+        int summationTotal = 0;
+        while (!functioningPairs.isEmpty()){
+            Pair<Integer, Integer> pair = functioningPairs.get(0);
+            functioningPairs.remove(0);
+            fieldSquares[pair.getKey()][pair.getValue()]=2;
+            summationTotal+=1;
+            if (pair.getKey() >= 0 && pair.getKey() < 399) {
+                if (fieldSquares[pair.getKey() + 1][pair.getValue()] == 0) {
+                    Pair<Integer, Integer> toVerifyPair = new Pair<>(pair.getKey()+1, pair.getValue());
+                    if(!functioningPairs.contains(toVerifyPair)) {
+                        functioningPairs.add(toVerifyPair);
+                    }
+                }
+            }
+            if (pair.getKey() > 0 && pair.getKey() <= 399) {
+                if (fieldSquares[pair.getKey() - 1][pair.getValue()] == 0) {
+                    Pair<Integer, Integer> toVerifyPair = new Pair<>(pair.getKey()-1, pair.getValue());
+                    if(!functioningPairs.contains(toVerifyPair)) {
+                        functioningPairs.add(toVerifyPair);
+                    }
+                }
+            }
+            if (pair.getValue() >= 0 && pair.getValue() < 599) {
+                if (fieldSquares[pair.getKey()][pair.getValue() + 1] == 0) {
+                    Pair<Integer, Integer> toVerifyPair = new Pair<>(pair.getKey(), pair.getValue()+1);
+                    if(!functioningPairs.contains(toVerifyPair)) {
+                        functioningPairs.add(toVerifyPair);
+                    }
+                }
+            }
+            if (pair.getValue() > 0 && pair.getValue() <= 599) {
+                if (fieldSquares[pair.getKey()][pair.getValue() - 1] == 0) {
+                    Pair<Integer, Integer> toVerifyPair = new Pair<>(pair.getKey(), pair.getValue()-1);
+                    if(!functioningPairs.contains(toVerifyPair)) {
+                        functioningPairs.add(toVerifyPair);
+                    }
+                }
             }
         }
-        if(x>0&&x<=399){
-            if(fieldSquares[x-1][y]==0){
-                totalAreaOverall = setSeenAndCallNeighbors(x-1,y,totalAreaOverall);
-            }
-        }
-        if(y>=0&&y<599){
-            if(fieldSquares[x][y+1]==0){
-                totalAreaOverall = setSeenAndCallNeighbors(x,y+1,totalAreaOverall);
-            }
-        }
-        if(y>0&&y<=599){
-            if(fieldSquares[x][y-1]==0){
-                totalAreaOverall = setSeenAndCallNeighbors(x,y-1,totalAreaOverall);
-            }
-        }
-        return  totalAreaOverall;
-
-    }
-
-    //Previous attempts at this version have yielded a solution with a poor runtime and a stack-overflow potential.  Scrapped for a more iterative solution.
-    private int setSeenAndCallNeighbors(int x, int y, int totalAreaInSet){
-        fieldSquares[x][y]=2;
-        return findFarmableNeighbor(x, y, totalAreaInSet+1);
+        return summationTotal;
     }
 }

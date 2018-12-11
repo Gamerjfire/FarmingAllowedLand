@@ -2,9 +2,7 @@ import Exceptions.FieldBoundingException;
 import Exceptions.NotSized4Exception;
 import SquareSubclass.Field;
 
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class MainRunner {
 
@@ -17,7 +15,7 @@ public class MainRunner {
             //String[] inputs = {"10 20 30 40", "10,20,30,40", "10 20 30 40 50", "yes 20 30 40"};
             Set<int[]> inputs = new HashSet<>();
             boolean running = true;
-            //Main runtime which pulls in information via the input scanner.
+            //Main runtime which pulls in information via the input scanner.  Error checking in real time to avoid typos.
             while (running) {
                 System.out.println("Please enter the next input for barren area.  If you are finished, press enter without typing anything else.");
                 String inputtedValue = input.nextLine();
@@ -27,19 +25,19 @@ public class MainRunner {
                     int[] sanitizedInput = sanitizeInput(inputtedValue);
                     if(sanitizedInput != null) {
                         totalField.setBarrenSquare(sanitizedInput);
-                        //inputs.add(sanitizedInput);
                     }
                 }
             }
-            System.out.println("Total Area of Farmable Area:"+totalField.findFarmableArea());
+            List<Integer> farmableArea = totalField.findFarmableArea();
+            Collections.sort(farmableArea);
+            System.out.println(( ("Total Area of Farmable Area: " + farmableArea.toString())));
         } catch(Exception exception){
             System.out.println(exception);
         }
     }
 
     //To grab the information and format it to an integer so that it can be calculated.  Also error checks in case of poor coding.
-    //Used instead of a scanner so immediate feedback on if there is a typo.
-    private static int[] sanitizeInput(String input){
+    public static int[] sanitizeInput(String input){
         int[] integerInput = new int[4];
         String[] stringInputArray;
         //Try catch for the purpose of checking for differently sized input and wrong types of input
@@ -58,9 +56,11 @@ public class MainRunner {
         } catch(NotSized4Exception e){
             System.out.println("Please enter only in sets of 4 for inputs");
             return null;
+        //For odd formating which is not caught by other formating errors
         } catch(NumberFormatException e){
             System.out.println("Please follow the listed format {## ## ## ##}");
             return null;
+        //For avoiding excess of the field
         } catch(FieldBoundingException Q){
             System.out.println("Please stay without the bounds of the field.");
             return null;
